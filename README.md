@@ -2,7 +2,7 @@ Tidal MIDI bindings for FluidSynth Percussion.
 
 # Requirements
 
-ghc >= 7.10
+ghc >= 7.10  
 tidal >= 0.7
 
 ### (future) installation
