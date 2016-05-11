@@ -1,4 +1,4 @@
-Tidal MIDI bindings for FluidSynth Percussion.
+Tidal MIDI bindings for FluidSynth.
 
 # Requirements
 
@@ -17,10 +17,13 @@ cabal configure && cabal build && cabal install tidal-midi-fluidsynth
 
 
 ```haskell
+import Sound.Tidal.FluidSynth
 import Sound.Tidal.GMDrums
+import Sound.Tidal.GMInst
 
 devices <- midiDevices
-(gdr,gdrum) <- midiSetters devices "Midi Through Port-0" 3 gmdrums getNow
+(gdr,gmt) <- midiSetters devices "Midi Through Port-0" 3 gmdrums getNow
+(midi4,m4t) <- midiSetters devices "Midi Through Port-0" 4 gminst getNow
 
 gdr $ gdrum "[bd(2,2), cp(1,2,1)]"
 ```
