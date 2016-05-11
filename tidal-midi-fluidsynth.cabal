@@ -17,7 +17,8 @@ build-type:          Simple
 cabal-version:       >=1.10
 
 library
-  exposed-modules:     Sound.Tidal.GMDrums
+  exposed-modules:     Sound.Tidal.GMInst
+                       Sound.Tidal.GMDrums
                        Sound.Tidal.FluidSynth
                        Sound.Tidal.FluidSynthParams
   -- other-modules:
